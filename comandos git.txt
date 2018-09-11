@@ -11,3 +11,4 @@ log --author="nome do cabrunco aqui": filtra os commits desse usuário
 log --decorate: mostra de onde veio o arquivo e para qual branch ele foi
 log --graph: mostra de forma gráfica o que foi realizado)
 git show <hash do commit aqui> : mostra o que foi alterado no determinado arquivo
+git diff -- mostra a diferença dos arquivos atuais com os últimos commits deles
