@@ -14,3 +14,7 @@ git show <hash do commit aqui> : mostra o que foi alterado no determinado arquiv
 git diff -- mostra a diferença dos arquivos atuais com os últimos commits deles
 git checkout "seu arquivo aqui" -- comando que desfaz uma modificação antes de ser adicionada
 git reset HEAD "comandos git.txt" -- remove o arquivo do status stage, ou seja, pronto para ser commitado
+git reset --soft ou --mixed ou --hard <hash do commit aqui>: Esses comando escolhem o commit que vão olhar, logo tudo o que foi feito depois deles, serão feitas as seguintes modificações 
+--soft: apaga o commit realizado no repositório, volta os mesmos para o estado de stage para serem commitados de novo
+--mixed: apaga o commit realizado no repositório, volta os mesmos para o estado de modificado para serem adicionados de novo
+--hard: apaga o commit realizado no repositório e as modificações do arquivo
