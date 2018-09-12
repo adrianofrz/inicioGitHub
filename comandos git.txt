@@ -12,3 +12,5 @@ log --decorate: mostra de onde veio o arquivo e para qual branch ele foi
 log --graph: mostra de forma gráfica o que foi realizado)
 git show <hash do commit aqui> : mostra o que foi alterado no determinado arquivo
 git diff -- mostra a diferença dos arquivos atuais com os últimos commits deles
+git checkout "seu arquivo aqui" -- comando que desfaz uma modificação antes de ser adicionada
+git reset HEAD "comandos git.txt" -- remove o arquivo do status stage, ou seja, pronto para ser commitado
