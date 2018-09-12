@@ -1,20 +1,23 @@
-gir config --global user.name "seu nome aqui" --configura o nome do usuário do git local
-gir config --global user.email "seu email aqui" --configura o email do usuário do git local
-gir config --global core.editor "seu editor aqui" --configura o editor do usuário do git local
+gir config --global user.name "seu nome aqui" --configura o nome do usuï¿½rio do git local
+gir config --global user.email "seu email aqui" --configura o email do usuï¿½rio do git local
+gir config --global core.editor "seu editor aqui" --configura o editor do usuï¿½rio do git local
 /**************************/
-git init   -- inicializa um repositório e fica enxergando as mudanças dentro do projeto
-git status -- mostra os status dos arquivos que fazem parte daquele repositório (untracked, unmodifed, modified e staged)
-git add    -- adiciona um arquivo novo ao repositório local ou aplica as modificações realizadas no arquivo para que ele fique no estado de stage, logo ao realizar um commit esse arquivo será levado junto na criação da versão.
-git commit -m "sua mensagem aqui" ou -am "sua mensagem aqui" (Esse aqui commita arquivos que já foram adicionados anteriormente ao repositório)-- pega todos os arquivos em modo stage (prontos para commit) e cria uma versão dele, um snapshot.
-git log --visualiza as modificações realiazdas no repositório (parametros para o git log: shortlog mostra os arquivos que um determinado autor alterou e commitou
-log --author="nome do cabrunco aqui": filtra os commits desse usuário
+git init   -- inicializa um repositï¿½rio e fica enxergando as mudanï¿½as dentro do projeto
+git status -- mostra os status dos arquivos que fazem parte daquele repositï¿½rio (untracked, unmodifed, modified e staged)
+git add    -- adiciona um arquivo novo ao repositï¿½rio local ou aplica as modificaï¿½ï¿½es realizadas no arquivo para que ele fique no estado de stage, logo ao realizar um commit esse arquivo serï¿½ levado junto na criaï¿½ï¿½o da versï¿½o.
+git commit -m "sua mensagem aqui" ou -am "sua mensagem aqui" (Esse aqui commita arquivos que jï¿½ foram adicionados anteriormente ao repositï¿½rio)-- pega todos os arquivos em modo stage (prontos para commit) e cria uma versï¿½o dele, um snapshot.
+git log --visualiza as modificaï¿½ï¿½es realiazdas no repositï¿½rio (parametros para o git log: shortlog mostra os arquivos que um determinado autor alterou e commitou
+log --author="nome do cabrunco aqui": filtra os commits desse usuï¿½rio
 log --decorate: mostra de onde veio o arquivo e para qual branch ele foi
-log --graph: mostra de forma gráfica o que foi realizado)
+log --graph: mostra de forma grï¿½fica o que foi realizado)
 git show <hash do commit aqui> : mostra o que foi alterado no determinado arquivo
-git diff -- mostra a diferença dos arquivos atuais com os últimos commits deles
-git checkout "seu arquivo aqui" -- comando que desfaz uma modificação antes de ser adicionada
+git diff -- mostra a diferenï¿½a dos arquivos atuais com os ï¿½ltimos commits deles
+git checkout "seu arquivo aqui" -- comando que desfaz uma modificaï¿½ï¿½o antes de ser adicionada
 git reset HEAD "comandos git.txt" -- remove o arquivo do status stage, ou seja, pronto para ser commitado
-git reset --soft ou --mixed ou --hard <hash do commit aqui>: Esses comando escolhem o commit que vão olhar, logo tudo o que foi feito depois deles, serão feitas as seguintes modificações 
---soft: apaga o commit realizado no repositório, volta os mesmos para o estado de stage para serem commitados de novo
---mixed: apaga o commit realizado no repositório, volta os mesmos para o estado de modificado para serem adicionados de novo
---hard: apaga o commit realizado no repositório e as modificações do arquivo
+git reset --soft ou --mixed ou --hard <hash do commit aqui>: Esses comando escolhem o commit que vï¿½o olhar, logo tudo o que foi feito depois deles, serï¿½o feitas as seguintes modificaï¿½ï¿½es 
+--soft: apaga o commit realizado no repositï¿½rio, volta os mesmos para o estado de stage para serem commitados de novo
+--mixed: apaga o commit realizado no repositï¿½rio, volta os mesmos para o estado de modificado para serem adicionados de novo
+--hard: apaga o commit realizado no repositï¿½rio e as modificaï¿½ï¿½es do arquivo
+/*********************************/
+git remote add origin git@github.com:sua autenticaÃ§Ã£o ssh aqui --liga o acesso ao repositÃ³rio na nuvem
+git push -u origin master -- publica os commits na nuvem pegando do repositorio local ligado anteriormente e joga dentro do brench master que foi o segundo parametro
