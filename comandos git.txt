@@ -20,4 +20,4 @@ git reset --soft ou --mixed ou --hard <hash do commit aqui>: Esses comando escol
 --hard: apaga o commit realizado no reposit�rio e as modifica��es do arquivo
 /*********************************/
 git remote add origin git@github.com:sua autenticação ssh aqui --liga o acesso ao repositório na nuvem
-git push -u origin master -- publica os commits na nuvem pegando do repositorio local ligado anteriormente e joga dentro do brench master que foi o segundo parametro
+git push -u origin master -- publica os commits na nuvem passando o repositorio que eu vou enviar e do brench que estamos (o segundo parametro)
