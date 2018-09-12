@@ -1,6 +1,6 @@
-gir config --global user.name "seu nome aqui" --configura o nome do usu�rio do git local
-gir config --global user.email "seu email aqui" --configura o email do usu�rio do git local
-gir config --global core.editor "seu editor aqui" --configura o editor do usu�rio do git local
+git config --global user.name "seu nome aqui" --configura o nome do usu�rio do git local
+git config --global user.email "seu email aqui" --configura o email do usu�rio do git local
+git config --global core.editor "seu editor aqui" --configura o editor do usu�rio do git local
 /**************************/
 git init   -- inicializa um reposit�rio e fica enxergando as mudan�as dentro do projeto
 git status -- mostra os status dos arquivos que fazem parte daquele reposit�rio (untracked, unmodifed, modified e staged)
