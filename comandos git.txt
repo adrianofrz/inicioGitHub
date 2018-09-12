@@ -5,7 +5,7 @@ gir config --global core.editor "seu editor aqui" --configura o editor do usuári
 git init   -- inicializa um repositório e fica enxergando as mudanças dentro do projeto
 git status -- mostra os status dos arquivos que fazem parte daquele repositório (untracked, unmodifed, modified e staged)
 git add    -- adiciona um arquivo novo ao repositório local ou aplica as modificações realizadas no arquivo para que ele fique no estado de stage, logo ao realizar um commit esse arquivo será levado junto na criação da versão.
-git commit -m "sua mensagem aqui" -- pega todos os arquivos em modo stage (prontos para commit) e cria uma versão dele, um snapshot
+git commit -m "sua mensagem aqui" ou -am "sua mensagem aqui" (Esse aqui commita arquivos que já foram adicionados anteriormente ao repositório)-- pega todos os arquivos em modo stage (prontos para commit) e cria uma versão dele, um snapshot.
 git log --visualiza as modificações realiazdas no repositório (parametros para o git log: shortlog mostra os arquivos que um determinado autor alterou e commitou
 log --author="nome do cabrunco aqui": filtra os commits desse usuário
 log --decorate: mostra de onde veio o arquivo e para qual branch ele foi
