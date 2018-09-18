@@ -1,4 +1,4 @@
-git config --global user.name "seu nome aqui" --configura o nome do usu�rio do git local
+﻿git config --global user.name "seu nome aqui" --configura o nome do usu�rio do git local
 git config --global user.email "seu email aqui" --configura o email do usu�rio do git local
 git config --global core.editor "seu editor aqui" --configura o editor do usu�rio do git local
 /**************************/
@@ -21,3 +21,4 @@ git reset --soft ou --mixed ou --hard <hash do commit aqui>: Esses comando escol
 /*********************************/
 git remote add origin git@github.com:sua autenticação ssh aqui --liga o acesso ao repositório na nuvem
 git push -u origin master -- publica os commits na nuvem passando o repositorio que eu vou enviar e do brench que estamos (o segundo parametro)
+git clone "endereço ssh aqui ou https" "nome do diretorio que será clonado"
